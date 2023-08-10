@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .navigation {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px 0;
+    }
+    .nav-item {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .product-card {
+      flex: 0 0 calc(33.33% - 20px);
+      background-color: #f4f4f4;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .product-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .sidebar {
+      background-color: #eee;
+      padding: 20px;
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Product Showcase</h1>
+    </div>
+    <div class="navigation">
+      <a href="#" class="nav-item">Home</a>
+      <a href="#" class="nav-item">Products</a>
+      <a href="#" class="nav-item">About</a>
+      <a href="#" class="nav-item">Contact</a>
+    </div>
+    <div class="main-content">
+      <div class="product-card">
+        <img src="product1.jpg" alt="Product 1" class="product-image">
+        <h2>Product 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="product-card">
+        <img src="product2.jpg" alt="Product 2" class="product-image">
+        <h2>Product 2</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="product-card">
+        <img src="product3.jpg" alt="Product 3" class="product-image">
+        <h2>Product 3</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h2>Related Links</h2>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 Product Showcase. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
